@@ -1,0 +1,24 @@
+h1 {
+  font-size: var(--fs-xlg);
+  line-height: var(--lh-xlg);
+  font-weight: var(--fw-black);
+}
+h2 {
+  font-size: var(--fs-lg);
+  line-height: var(--lh-lg);
+  font-weight: var(--fw-bold);
+}
+h3 {
+  font-size: var(--fs-md);
+  line-height: var(--lh-md);
+  font-weight: var(--fw-semibold);
+}
+h4 {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  font-weight: var(--fw-semibold);
+}
+p {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+}

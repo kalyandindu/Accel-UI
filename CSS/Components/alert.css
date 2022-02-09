@@ -20,18 +20,18 @@
 }
 
 .alert-info {
-  background-color: #dbeafe;
+  background-color: var(--blue-100);
   color: var(--blue);
 }
 .alert-success {
-  background-color: #dcfce7;
+  background-color: var(--green-100);
   color: var(--green);
 }
 .alert-err {
-  background-color: #fee2e2;
+  background-color: var(--red-100);
   color: var(--red);
 }
 .alert-warn {
-  background-color: #ffedd5;
+  background-color: var(--orange-100);
   color: var(--orange);
 }

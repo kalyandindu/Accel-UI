@@ -4,7 +4,7 @@
   --fs-lg: 1.5rem;
   --fs-md: 1.2rem;
   --fs-sm: 1rem;
-  --fs-xsm: 0.5rem;
+  --fs-xsm: 0.75rem;
 
   /*Line height */
   --lh-xlg: 3rem;
@@ -64,4 +64,9 @@
   --blue: #2563eb;
   --purple: #9333ea;
   --white: #fff;
+
+  --blue-100: #dbeafe;
+  --green-100: #dcfce7;
+  --red-100: #fee2e2;
+  --orange-100: #ffedd5;
 }

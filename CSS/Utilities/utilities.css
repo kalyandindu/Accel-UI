@@ -11,6 +11,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+.ul-pad-0 {
+  padding: 0;
+}
+.pad-8-16 {
+  padding: var(--sp-xsm) var(--sp-sm);
+}
 
 /* width & height classes */
 .wdt-100 {
@@ -48,8 +54,14 @@
   align-items: center;
   justify-content: center;
 }
+.flex-sp-bw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .flex-column-center {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }

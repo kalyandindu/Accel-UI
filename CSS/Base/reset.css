@@ -6,13 +6,17 @@
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "lato", sans-serif;
-  margin: 0;
+  color: var(--gray-900);
   min-height: 100vh;
   line-height: 1.5;
 }
@@ -44,6 +48,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 button {
   cursor: pointer;

@@ -57,7 +57,7 @@
   align-items: center;
   justify-content: center;
 }
-.flex-sp-bw {
+.flex-justify-sp-bw {
   display: flex;
   align-items: center;
   justify-content: space-between;

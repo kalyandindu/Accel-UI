@@ -1,92 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/CSS/main.css">
-  <title>Button</title>
-</head>
-<body>
-  <header class="head flex-sp-bw">
-    <a href="#" class="logo flex-center"><i class="fas fa-meteor logo-icon"></i><span class="logo-title">Accel UI</span></a>
-    <div class="nav" >
-      <ul class="nav_ul flex-sp-bw">
-        <li class="nav_li"><a href="#">Home</a></li>
-        <li class="nav_li"><a href="#">Documentation</a></li>
-        <li class="nav_li"><a href="#"><i class="fab fa-github"></i></a></li>
-        <li class="nav_li"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-      </ul>
-    </div>
-  </header>
-  <main class="main">
-    <aside class="nav-drawer">
-      <div class="comp-drawer">
-        <h3 class="drawer_heading">Component</h3>
-        <div class="comp_list">
-          <ul class="drawer_ul ul-pad-0">
-            <li class="drawer_li"><a href="#" class="drawer_a">Avatar</a></li>
-          </ul>
-          <ul class="drawer_ul ul-pad-0">
-            <li class="drawer_li"><a href="#" class="drawer_a">Alert</a></li>
-          </ul>
-          <ul class="drawer_ul ul-pad-0">
-            <li class="drawer_li"><a href="#" class="drawer_a">Badge</a></li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/CSS/main.css" />
+    <title>Button</title>
+  </head>
+  <body>
+    <header class="head flex-justify-sp-bw">
+      <a href="#" class="logo flex-center"
+        ><i class="fas fa-meteor logo-icon"></i
+        ><span class="logo-title">Accel UI</span></a
+      >
+      <div class="nav">
+        <ul class="nav_ul flex-justify-sp-bw">
+          <li class="nav_li"><a href="#">Home</a></li>
+          <li class="nav_li"><a href="#">Documentation</a></li>
+          <li class="nav_li">
+            <a href="#"><i class="fab fa-github"></i></a>
+          </li>
+          <li class="nav_li">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <aside class="nav-drawer">
+        <div class="comp-drawer">
+          <h3 class="drawer_heading">Component</h3>
+          <div class="comp_list">
+            <ul class="drawer_ul ul-pad-0">
+              <li class="drawer_li"><a href="#" class="drawer_a">Avatar</a></li>
+            </ul>
+            <ul class="drawer_ul ul-pad-0">
+              <li class="drawer_li"><a href="#" class="drawer_a">Alert</a></li>
+            </ul>
+            <ul class="drawer_ul ul-pad-0">
+              <li class="drawer_li"><a href="#" class="drawer_a">Badge</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </aside>
+      </aside>
 
-    <div class="content">
-      <h2 class="content_h2">Buttons</h2>
-      <h3 class="content_h3"> Primary & Secondary buttons:</h3>
-      <div class="btn-container d-flex">
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-outline">Primary ouline</button>
-        <button class="btn btn-disabled">Disabled</button>
-      </div>
+      <div class="content">
+        <h2 class="content_h2">Buttons</h2>
+        <h3 class="content_h3">Primary & Secondary buttons:</h3>
+        <div class="btn-container d-flex">
+          <button class="btn btn-primary">Primary</button>
+          <button class="btn btn-outline">Primary ouline</button>
+          <button class="btn btn-disabled">Disabled</button>
+        </div>
 
-      <h3 class="content_h3">Link</h3>
-      <div class="btn-container">
-        <a href="#" class="btn btn-link">link</a>
-      </div>
+        <h3 class="content_h3">Link</h3>
+        <div class="btn-container">
+          <a href="#" class="btn btn-link">link</a>
+        </div>
 
-      <h3 class="content_h3">Button with Icon:</h3>
-      <div class="btn-container d-flex">
-        <button class="btn btn-primary btn-wrapper">
-          <div class="btn_icon"><i class="fa-solid fa-circle-info"></i></div>
-          <div class="btn_content">Info</div>
-        </button>
-        <button class="btn btn-outline btn-wrapper">
-          <div class="btn_icon"><i class="fa-solid fa-cart-shopping"></i></div>
-          <div class="btn_content">Add to cart</div>
-        </button>
-        <button class="btn btn-primary btn-wrapper">
-          <div class="btn_icon"><i class="fa-solid fa-forward"></i></div>
-        </button>
-      </div>
+        <h3 class="content_h3">Button with Icon:</h3>
+        <div class="btn-container d-flex">
+          <button class="btn btn-primary btn-wrapper">
+            <div class="btn_icon"><i class="fa-solid fa-circle-info"></i></div>
+            <div class="btn_content">Info</div>
+          </button>
+          <button class="btn btn-outline btn-wrapper">
+            <div class="btn_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="btn_content">Add to cart</div>
+          </button>
+          <button class="btn btn-primary btn-wrapper">
+            <div class="btn_icon"><i class="fa-solid fa-forward"></i></div>
+          </button>
+        </div>
 
-      <h3 class="content_h3">Fixed Button:</h3>
-      <div class="btn-container d-flex">
-        <p class="btn-container_p"> Include btn-float class to make a button floatable</p>
-        <!-- <button class="btn btn-outline rounded btn-float flex-center">
+        <h3 class="content_h3">Fixed Button:</h3>
+        <div class="btn-container d-flex">
+          <p class="btn-container_p">
+            Include btn-float class to make a button floatable
+          </p>
+          <!-- <button class="btn btn-outline rounded btn-float flex-center">
          <i class="fa-solid fa-moon"></i>
         </button>
         <button class="btn btn-outline rounded btn-float flex-center">
           <i class="fa-solid fa-circle-plus"></i>
          </button> -->
+        </div>
       </div>
-      
-    </div> 
-  </main>
-  <footer class="footer flex-column-center">
-    <p class="footer_p">Created by Pavan Dindu</p>
-    <ul class="footer_ul flex-sp-bw ul-pad-0">
-      <li class="footer_li"><a href="#"><i class="fab fa-github"></i></a></li>
-      <li class="footer_li"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-      <li class="footer_li"><a href="#"><i class="fab fa-twitter"></i></a></li>
-    </ul>
-  </footer>
-</body>
+    </main>
+    <footer class="footer flex-column-center">
+      <p class="footer_p">Created by Pavan Dindu</p>
+      <ul class="footer_ul flex-justify-sp-bw ul-pad-0">
+        <li class="footer_li">
+          <a href="#"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="footer_li">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="footer_li">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

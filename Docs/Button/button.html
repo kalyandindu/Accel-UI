@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/CSS/main.css">
-  <title>Badge</title>
+  <title>Button</title>
 </head>
 <body>
   <header class="head flex-sp-bw">
@@ -39,47 +39,46 @@
     </aside>
 
     <div class="content">
-      <h2 class="content_h2">Badge</h2>
-      <h3 class="content_h3"> Badge on Icons:</h3>
-      <div class="badge-container flex-center">
-       <div class="badge-wrapper">
-         <div class="badge_icon"><i class="fa-solid fa-envelope"></i></div>
-         <div class="badge badge-notify flex-center">6</div>
-       </div>
-       <div class="badge-wrapper">
-        <div class="badge_icon"><i class="fa-solid fa-cart-shopping"></i></div>
-        <div class="badge badge-notify flex-center">10+</div>
-       </div>
-       <div class="badge-wrapper">
-        <div class="badge_icon"><i class="fa-solid fa-heart"></i></div>
-        <div class="badge badge-notify flex-center">90</div>
-       </div>
-       <div class="badge-wrapper">
-        <div class="badge_icon"><i class="fa-solid fa-bell"></i></div>
-        <div class="badge badge-notify flex-center">9+</div>
-       </div>
+      <h2 class="content_h2">Buttons</h2>
+      <h3 class="content_h3"> Primary & Secondary buttons:</h3>
+      <div class="btn-container d-flex">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-outline">Primary ouline</button>
+        <button class="btn btn-disabled">Disabled</button>
       </div>
 
-      <h3 class="content_h3"> Badge on Avatars:</h3>
-      <div class="badge-container flex-center">
-        <div class="badge-wrapper">
-          <div class="avatar-round avatar-xsm"><img src="/Assets/Img_1.jpg" alt="Profile pic" class="avatar_img"></div>
-          <div class="badge badge-xsm badge-status"></div>
-        </div>
-        <div class="badge-wrapper">
-          <div class="avatar-round avatar-sm"><img src="/Assets/Img_1.jpg" alt="Profile pic" class="avatar_img"></div>
-          <div class="badge badge-sm badge-status"></div>
-        </div>
-        <div class="badge-wrapper">
-          <div class="avatar-round avatar-md"><img src="/Assets/Img_1.jpg" alt="Profile pic" class="avatar_img"></div>
-          <div class="badge badge-md badge-status"></div>
-        </div>
-        <div class="badge-wrapper">
-          <div class="avatar-round avatar-lg"><img src="/Assets/Img_1.jpg" alt="Profile pic" class="avatar_img"></div>
-          <div class="badge badge-lg badge-status"></div>
-        </div>
+      <h3 class="content_h3">Link</h3>
+      <div class="btn-container">
+        <a href="#" class="btn btn-link">link</a>
       </div>
-    </div>
+
+      <h3 class="content_h3">Button with Icon:</h3>
+      <div class="btn-container d-flex">
+        <button class="btn btn-primary btn-wrapper">
+          <div class="btn_icon"><i class="fa-solid fa-circle-info"></i></div>
+          <div class="btn_content">Info</div>
+        </button>
+        <button class="btn btn-outline btn-wrapper">
+          <div class="btn_icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <div class="btn_content">Add to cart</div>
+        </button>
+        <button class="btn btn-primary btn-wrapper">
+          <div class="btn_icon"><i class="fa-solid fa-forward"></i></div>
+        </button>
+      </div>
+
+      <h3 class="content_h3">Fixed Button:</h3>
+      <div class="btn-container d-flex">
+        <p class="btn-container_p"> Include btn-float class to make a button floatable</p>
+        <!-- <button class="btn btn-outline rounded btn-float flex-center">
+         <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-outline rounded btn-float flex-center">
+          <i class="fa-solid fa-circle-plus"></i>
+         </button> -->
+      </div>
+      
+    </div> 
   </main>
   <footer class="footer flex-column-center">
     <p class="footer_p">Created by Pavan Dindu</p>

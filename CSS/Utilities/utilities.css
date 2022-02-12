@@ -5,6 +5,9 @@
 .border-1 {
   border: 1px solid;
 }
+.border-rad-50 {
+  border-radius: 50%;
+}
 
 /* alignment */
 .center-align {

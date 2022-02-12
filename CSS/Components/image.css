@@ -1,4 +1,6 @@
 .img-container {
+  gap: var(--sp-md);
+  flex-wrap: wrap;
   width: 85%;
   box-shadow: 0 0 4px var(--gray-900);
 }
@@ -6,7 +8,22 @@
   max-width: 100%;
   object-fit: cover;
 }
-.img-w-h-10 {
+.img-rounded {
+  border-radius: 50%;
+}
+.img-rounded-xsm {
+  width: 5rem;
+  height: 5rem;
+}
+.img-rounded-sm {
   width: 10rem;
   height: 10rem;
+}
+.img-rounded-md {
+  width: 15rem;
+  height: 15rem;
+}
+.img-rounded-lg {
+  width: 20rem;
+  height: 20rem;
 }

@@ -6,9 +6,6 @@
   max-width: 100%;
   object-fit: cover;
 }
-.img-round {
-  border-radius: 50%;
-}
 .img-w-h-10 {
   width: 10rem;
   height: 10rem;

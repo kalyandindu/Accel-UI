@@ -1,0 +1,15 @@
+.img-container {
+  width: 85%;
+  box-shadow: 0 0 4px var(--gray-900);
+}
+.image-responsive {
+  max-width: 100%;
+  object-fit: cover;
+}
+.img-round {
+  border-radius: 50%;
+}
+.img-w-h-10 {
+  width: 10rem;
+  height: 10rem;
+}

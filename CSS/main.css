@@ -2,6 +2,7 @@
 @import url(Base/reset.css);
 @import url(Base/typography.css);
 @import url(Utilities/utilities.css);
+@import url(Utilities/Text-Utility.css);
 @import url(Layout/layout.css);
 @import url(Components/avatar.css);
 @import url(Components/alert.css);

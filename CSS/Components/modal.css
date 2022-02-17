@@ -1,0 +1,38 @@
+.modal__container {
+  padding: var(--sp-md);
+  box-shadow: 0 0 4px var(--gray-900);
+}
+.modal {
+  position: relative;
+  max-width: 30rem;
+  padding: var(--sp-xsm);
+  box-shadow: 0 0 4px var(--gray-900);
+}
+.modal > * {
+  padding: var(--sp-sm);
+}
+.modal__icon-container {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+.modal__icon {
+  font-size: large;
+}
+.modal__icon:hover {
+  cursor: pointer;
+  color: var(--red);
+}
+.modal__icon:active {
+  transform: scale(0.98);
+}
+.modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--sp-sm);
+}
+.modal-scroll .modal__body {
+  max-height: 7rem;
+  overflow-y: scroll;
+}

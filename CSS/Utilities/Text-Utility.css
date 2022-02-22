@@ -1,5 +1,5 @@
 .text-utility-container {
-  width: 80%;
+  width: 100%;
   padding: var(--sp-md);
   box-shadow: 0 0 4px var(--gray-900);
 }

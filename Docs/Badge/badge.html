@@ -23,7 +23,7 @@
     <div class="nav">
       <ul class="nav_ul flex-justify-sp-bw">
         <li class="nav_li"><a href="/index.html">Home</a></li>
-        <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+        <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
         <li class="nav_li">
           <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
         </li>
@@ -42,7 +42,7 @@
               <li class="drawer_li"><a href="/Docs/Avatar/avatar.html" class="drawer_a">Avatar</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
-              <li class="drawer_li"><a href="/Docs/Badge/badge.html" class="drawer_a">Badge</a></li>
+              <li class="drawer_li"><a href="/Docs/Badge/badge.html" class="drawer_a link-active">Badge</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
               <li class="drawer_li"><a href="/Docs/Button/button.html" class="drawer_a">Button</a></li>
@@ -71,7 +71,11 @@
 
       <div class="content">
         <h2 class="content_h2">Badge</h2>
+        <p class="content__p">Badges are used to highlight extra information associated with an element. Examples being notifications on icon, status on avatar, new arrivals on shopping etc.</p>
         <h3 class="content_h3">Badge on Icons:</h3>
+        <p class="content__p">
+          Displays number of new notifications of an icon. Use <span class="class-name__highlight">badge</span> and <span class="class-name__highlight">badge-notify</span> classes to position notification badge top-right to an icon.
+        </p>
         <div class="badge-container flex-center">
           <div class="badge-wrapper">
             <div class="badge_icon"><i class="fa-solid fa-envelope"></i></div>
@@ -92,8 +96,31 @@
             <div class="badge badge-notify flex-center">9+</div>
           </div>
         </div>
+        <pre>
+          <code lang="html">
+            <div class="badge-wrapper">
+              <div class="badge_icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="badge badge-notify flex-center">6</div>
+            </div>
+            <div class="badge-wrapper">
+              <div class="badge_icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="badge badge-notify flex-center">10+</div>
+            </div>
+            <div class="badge-wrapper">
+              <div class="badge_icon"><i class="fa-solid fa-heart"></i></div>
+              <div class="badge badge-notify flex-center">90</div>
+            </div>
+            <div class="badge-wrapper">
+              <div class="badge_icon"><i class="fa-solid fa-bell"></i></div>
+              <div class="badge badge-notify flex-center">9+</div>
+            </div>
+          </code>
+        </pre>
 
         <h3 class="content_h3">Badge on Avatars:</h3>
+        <p class="content__p">Status badge indicates online presence of user. It comes in various sizes to facilitate various avatars. Use <span class="class-name__highlight">badge</span> and <span class="class-name__highlight">badge-status</span> classes to create a status badge and <span class="class-name__highlight">badge-{size}</span> for various sizes where size being xsm, sm, md, lg or xlg.</p>
         <div class="badge-container flex-center">
           <div class="badge-wrapper">
             <div class="avatar-round avatar-xsm">
@@ -136,6 +163,50 @@
             <div class="badge badge-lg badge-status"></div>
           </div>
         </div>
+        <pre>
+          <code lang="html">
+            <div class="badge-wrapper">
+              <div class="avatar-round avatar-xsm">
+                <img
+                  src="Place img src here"
+                  alt="Profile pic"
+                  class="avatar_img"
+                />
+              </div>
+              <div class="badge badge-xsm badge-status"></div>
+            </div>
+            <div class="badge-wrapper">
+              <div class="avatar-round avatar-sm">
+                <img
+                  src="Place img src here"
+                  alt="Profile pic"
+                  class="avatar_img"
+                />
+              </div>
+              <div class="badge badge-sm badge-status"></div>
+            </div>
+            <div class="badge-wrapper">
+              <div class="avatar-round avatar-md">
+                <img
+                  src="Place img src here"
+                  alt="Profile pic"
+                  class="avatar_img"
+                />
+              </div>
+              <div class="badge badge-md badge-status"></div>
+            </div>
+            <div class="badge-wrapper">
+              <div class="avatar-round avatar-lg">
+                <img
+                  src="Place img src here"
+                  alt="Profile pic"
+                  class="avatar_img"
+                />
+              </div>
+              <div class="badge badge-lg badge-status"></div>
+            </div>
+          </code>
+        </pre>
       </div>
     </main>
    <footer class="footer flex-column-center">
@@ -152,5 +223,8 @@
       </li>
     </ul>
   </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
   </body>
 </html>

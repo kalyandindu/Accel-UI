@@ -23,7 +23,7 @@
     <div class="nav">
       <ul class="nav_ul flex-justify-sp-bw">
         <li class="nav_li"><a href="/index.html">Home</a></li>
-        <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+        <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
         <li class="nav_li">
           <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
         </li>
@@ -31,7 +31,7 @@
     </div>
   </header>
     <main class="main">
-      <aside class="nav-drawer">
+      <aside class="nav-drawer btn-aside">
         <div class="comp-drawer">
           <h3 class="drawer_heading">Component</h3>
           <div class="comp_list">
@@ -45,7 +45,7 @@
               <li class="drawer_li"><a href="/Docs/Badge/badge.html" class="drawer_a">Badge</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
-              <li class="drawer_li"><a href="/Docs/Button/button.html" class="drawer_a">Button</a></li>
+              <li class="drawer_li"><a href="/Docs/Button/button.html" class="drawer_a link-active">Button</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
               <li class="drawer_li"><a href="/Docs/Card/card.html" class="drawer_a">Card</a></li>
@@ -71,19 +71,37 @@
 
       <div class="content">
         <h2 class="content_h2">Buttons</h2>
-        <h3 class="content_h3">Primary & Secondary buttons:</h3>
+        <p class="content__p"> Button component is used to trigger an event that it is associated with. Example being submition of form, Action on a modal/card etc.</p>
+        <h3 class="content_h3">Primary button:</h3>
+        <p class="content__p">To be used for call to action buttons. Use <span class="class-name__highlight">btn-primary</span> along with <span class="class-name__highlight">btn</span> class for primary button. Similarly <span class="class-name__highlight">btn-outline</span> and <span class="class-name__highlight">btn-disabled</span> for outline and disabled buttons.</p> 
         <div class="btn-container d-flex">
           <button class="btn btn-primary">Primary</button>
           <button class="btn btn-outline">Primary ouline</button>
           <button class="btn btn-disabled">Disabled</button>
         </div>
 
+        <pre>
+          <code lang="html">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-outline">Primary ouline</button>
+            <button class="btn btn-disabled">Disabled</button>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Link</h3>
+        <p class="content__p">Display of link in the form of button. Use <span class="class-name__highlight">btn-link</span> class for the same.</p>
         <div class="btn-container">
           <a href="#" class="btn btn-link">link</a>
         </div>
 
+        <pre>
+          <code lang="html">
+            <a href="#" class="btn btn-link">link</a>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Button with Icon:</h3>
+        <p class="content__p">Wrapping icon with button content. Use <span class="class-name__highlight">btn-wrapper</span> class to achieve this.</p>
         <div class="btn-container d-flex">
           <button class="btn btn-primary btn-wrapper">
             <div class="btn_icon"><i class="fa-solid fa-circle-info"></i></div>
@@ -100,10 +118,27 @@
           </button>
         </div>
 
+        <pre>
+          <code lang="html">
+            <button class="btn btn-primary btn-wrapper">
+              <div class="btn_icon"><i class="fa-solid fa-circle-info"></i></div>
+              <div class="btn_content">Info</div>
+            </button>
+            <button class="btn btn-outline btn-wrapper">
+              <div class="btn_icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="btn_content">Add to cart</div>
+            </button>
+            <button class="btn btn-primary btn-wrapper">
+              <div class="btn_icon"><i class="fa-solid fa-forward"></i></div>
+            </button>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Fixed Button:</h3>
-        <div class="btn-container d-flex">
           <p class="btn-container_p">
-            Include btn-float class to make a button floatable
+            Include <span class="class-name__highlight">btn-float</span> class to make any button floatable.
           </p>
           <!-- <button class="btn btn-outline rounded btn-float flex-center">
          <i class="fa-solid fa-moon"></i>
@@ -111,7 +146,6 @@
         <button class="btn btn-outline rounded btn-float flex-center">
           <i class="fa-solid fa-circle-plus"></i>
          </button> -->
-        </div>
       </div>
     </main>
    <footer class="footer flex-column-center">
@@ -128,5 +162,8 @@
       </li>
     </ul>
   </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
   </body>
 </html>

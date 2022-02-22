@@ -2,9 +2,7 @@
 
 .doc-home__main {
   min-height: 75vh;
-}
-.doc-home__main > * {
-  margin-bottom: var(--sp-sm);
+  gap: var(--sp-sm);
 }
 .doc__links {
   gap: var(--sp-sm);

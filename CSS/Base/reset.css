@@ -53,3 +53,7 @@ a {
 button {
   cursor: pointer;
 }
+iframe {
+  max-width: 100%;
+  margin-left: auto;
+}

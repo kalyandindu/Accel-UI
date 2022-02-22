@@ -23,7 +23,7 @@
     <div class="nav">
       <ul class="nav_ul flex-justify-sp-bw">
         <li class="nav_li"><a href="/index.html">Home</a></li>
-        <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+        <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
         <li class="nav_li">
           <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
         </li>
@@ -48,7 +48,7 @@
               <li class="drawer_li"><a href="/Docs/Button/button.html" class="drawer_a">Button</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
-              <li class="drawer_li"><a href="/Docs/Card/card.html" class="drawer_a">Card</a></li>
+              <li class="drawer_li"><a href="/Docs/Card/card.html" class="drawer_a link-active">Card</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
               <li class="drawer_li"><a href="/Docs/Image/image.html" class="drawer_a">Image</a></li>
@@ -71,8 +71,9 @@
 
       <div class="content">
         <h2 class="content_h2">Card</h2>
-
+        <p class="content__p">Grouping of relevant information into a single component. It presents summary and provides link to the proceed further. Use <span class="class-name__highlight">card</span> class to create a card component and <span class="class-name__highlight">card__img</span> <span class="class-name__highlight">card-title</span> <span class="class-name__highlight">card-desc</span> for images, title and description of card .</p>
         <h3 class="content_h3">Card with Badge :</h3>
+        <p class="content__p">Used to highlight any info associated with card. Example like new/trending items in ecommerce site. Use <span class="class-name__highlight">card__badge</span> class to position it relevant to card. </p>
         <div class="card-container flex-center">
           <div class="card flex-column">
             <div class="card__img">
@@ -105,7 +106,44 @@
           </div>
         </div>
 
+        <pre>
+          <code lang="html">
+            <div class="card flex-column">
+              <div class="card__img">
+                <img src="/Assets/Sofa.jpg" alt="Sofa" />
+              </div>
+              <div class="card__info pad-8-16">
+                <p class="card-title">Sofa's & More</p>
+                <p class="card-desc">Seater sofa - Grey</p>
+              </div>
+              <div class="card__price pad-8-16 d-flex">
+                <div class="card__price--final">Rs:25000</div>
+                <div class="card__price--original"><strike>40000</strike></div>
+                <div class="card__price--offer">37.5% off</div>
+              </div>
+              <div class="card__footer pad-8-16">
+                <div class="card-footer__div flex-justify-sp-bw">
+                  <button class="btn btn-primary btn-wrapper">
+                    <div class="btn_icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="btn_content">Add to Cart</div>
+                  </button>
+                  <button class="btn btn-outline btn-wrapper">
+                    <div class="btn_icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="btn_content">Wishlist</div>
+                  </button>
+                </div>
+              </div>
+              <div class="badge card__badge">New</div>
+            </div>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Card with Dismiss :</h3>
+        <p class="content__p">
+          To discard selected card from the list. Use <span class="class-name__highlight">card__dismiss</span> class for positioning button at top-right.
+        </p>
         <div class="card-container flex-center">
           <div class="card flex-column">
             <div class="card__img">
@@ -140,7 +178,44 @@
           </div>
         </div>
 
+        <pre>
+          <code lang="html">
+            <div class="card flex-column">
+              <div class="card__img">
+                <img src="/Assets/Sofa.jpg" alt="Sofa" />
+              </div>
+              <div class="card__info pad-8-16">
+                <p class="card-title">Sofa's & More</p>
+                <p class="card-desc">Seater sofa - Grey</p>
+              </div>
+              <div class="card__price pad-8-16 d-flex">
+                <div class="card__price--final">Rs:25000</div>
+                <div class="card__price--original"><strike>40000</strike></div>
+                <div class="card__price--offer">37.5% off</div>
+              </div>
+              <div class="card__footer pad-8-16">
+                <div class="card-footer__div flex-justify-sp-bw">
+                  <button class="btn btn-primary btn-wrapper">
+                    <div class="btn_icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="btn_content">Add to Cart</div>
+                  </button>
+                  <button class="btn btn-outline btn-wrapper">
+                    <div class="btn_icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="btn_content">Wishlist</div>
+                  </button>
+                </div>
+              </div>
+              <div class="card__dismiss">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </div>
+            </div>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Card with Text Overlay :</h3>
+        <p class="content__p">To highlight text over the card. Use <span class="class-name__highlight">card__overlay</span> class for the text to highlight.</p>
         <div class="card-container flex-center">
           <div class="card flex-column">
             <div class="card__img">
@@ -175,7 +250,44 @@
           </div>
         </div>
 
+        <pre>
+          <code lang="html">
+            <div class="card flex-column">
+              <div class="card__img">
+                <img src="/Assets/Sofa.jpg" alt="Sofa" />
+              </div>
+              <div class="card__info pad-8-16">
+                <p class="card-title">Sofa's & More</p>
+                <p class="card-desc">Seater sofa - Grey</p>
+              </div>
+              <div class="card__price pad-8-16 d-flex">
+                <div class="card__price--final">Rs:25000</div>
+                <div class="card__price--original"><strike>40000</strike></div>
+                <div class="card__price--offer">37.5% off</div>
+              </div>
+              <div class="card__footer pad-8-16">
+                <div class="card-footer__div flex-justify-sp-bw">
+                  <button class="btn btn-primary btn-wrapper">
+                    <div class="btn_icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="btn_content">Add to Cart</div>
+                  </button>
+                  <button class="btn btn-outline btn-wrapper">
+                    <div class="btn_icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="btn_content">Wishlist</div>
+                  </button>
+                </div>
+              </div>
+              <div class="card__overlay flex-center">
+                <div class="card__overlay-text">Out of stock</div>
+              </div>
+            </div>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Card with Plain text :</h3>
+        <p class="content__p"> Simple card with header and description.</p>
         <div class="card-container flex-center">
           <div class="card">
             <div class="card__info pad-8-16">
@@ -190,7 +302,24 @@
           </div>
         </div>
 
+        <pre>
+          <code lang="html">
+            <div class="card">
+              <div class="card__info pad-8-16">
+                <h3 class="card-title">Sofa's & More</h3>
+                <p class="card-desc--primary">Seater sofa - Grey</p>
+                <p class="card-desc--secondary">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi omnis suscipit iste eum impedit velit eius corporis
+                  rem ullam accusantium?
+                </p>
+              </div>
+            </div>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Horizontal Card :</h3>
+        <p class="content__p">Grouping the content within card into columns. Use <span class="class-name__highlight">d-flex</span> utility class for the content to split</p>
         <div class="card-container flex-center">
           <div class="card-verticle d-flex">
             <div class="card__img">
@@ -226,6 +355,43 @@
           </div>
         </div>
 
+        <pre>
+          <code lang="html">
+            <div class="card-verticle d-flex">
+              <div class="card__img">
+                <img src="/Assets/Sofa.jpg" alt="Sofa" />
+              </div>
+              <div class="card__content flex-column">
+                <div class="card__info pad-8-16">
+                  <p class="card-title">Sofa's & More</p>
+                  <p class="card-desc">Seater sofa - Grey</p>
+                </div>
+                <div class="card__price pad-8-16 d-flex">
+                  <div class="card__price--final">Rs:25000</div>
+                  <div class="card__price--original"><strike>40000</strike></div>
+                  <div class="card__price--offer">37.5% off</div>
+                </div>
+                <div class="card__footer pad-8-16">
+                  <div class="card-footer__div flex-justify-sp-bw">
+                    <button class="btn btn-primary btn-wrapper">
+                      <div class="btn_icon">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </div>
+                      <div class="btn_content">Cart</div>
+                    </button>
+                    <button class="btn btn-outline btn-wrapper">
+                      <div class="btn_icon">
+                        <i class="fa-solid fa-heart"></i>
+                      </div>
+                      <div class="btn_content">Wishlist</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Card with shadow :</h3>
         <div class="card-container flex-center">
           <div class="card card-shadow flex-column">
@@ -257,6 +423,38 @@
             </div>
           </div>
         </div>
+        <pre>
+          <code lang="html">
+            <div class="card card-shadow flex-column">
+              <div class="card__img">
+                <img src="/Assets/Sofa.jpg" alt="Sofa" />
+              </div>
+              <div class="card__info pad-8-16">
+                <p class="card-title">Sofa's & More</p>
+                <p class="card-desc">Seater sofa - Grey</p>
+              </div>
+              <div class="card__price pad-8-16 d-flex">
+                <div class="card__price--final">Rs:25000</div>
+                <div class="card__price--original"><strike>40000</strike></div>
+                <div class="card__price--offer">37.5% off</div>
+              </div>
+              <div class="card__footer pad-8-16">
+                <div class="card-footer__div flex-justify-sp-bw">
+                  <button class="btn btn-primary btn-wrapper">
+                    <div class="btn_icon">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="btn_content">Add to Cart</div>
+                  </button>
+                  <button class="btn btn-outline btn-wrapper">
+                    <div class="btn_icon"><i class="fa-solid fa-heart"></i></div>
+                    <div class="btn_content">Wishlist</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </code>
+        </pre>
       </div>
     </main>
    <footer class="footer flex-column-center">
@@ -273,5 +471,8 @@
       </li>
     </ul>
   </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
   </body>
 </html>

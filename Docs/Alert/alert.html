@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link rel="stylesheet" href="/CSS/main.css" />
     <title>Alert</title>
   </head>
@@ -23,7 +16,7 @@
       <div class="nav">
         <ul class="nav_ul flex-justify-sp-bw">
           <li class="nav_li"><a href="/index.html">Home</a></li>
-          <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+          <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
           <li class="nav_li">
             <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
           </li>
@@ -36,7 +29,7 @@
           <h3 class="drawer_heading">Component</h3>
           <div class="comp_list">
             <ul class="drawer_ul ul-pad-0">
-              <li class="drawer_li"><a href="/Docs/Alert/alert.html" class="drawer_a">Alert</a></li>
+              <li class="drawer_li"><a href="/Docs/Alert/alert.html" class="drawer_a link-active">Alert</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
               <li class="drawer_li"><a href="/Docs/Avatar/avatar.html" class="drawer_a">Avatar</a></li>
@@ -70,7 +63,11 @@
       </aside>
       <div class="content">
         <h2 class="content_h2">Alerts</h2>
+        <p class="content_p">Alert is a pop-up message that is used to provide feedback to user on a task.</p>
         <h3 class="content_h3">Normal Alert</h3>
+        <p class="content__p">
+          A simple text alert of four varients i.e. <span class="class-name__highlight">alert-info</span>, <span class="class-name__highlight">alert-success</span>, <span class="class-name__highlight">alert-err</span>, <span class="class-name__highlight">alert-warn</span>
+        </p>
         <div class="alert_container flex-column">
           <div class="alert alert-info">Info Alert</div>
           <div class="alert alert-success">Success Alert</div>
@@ -78,7 +75,19 @@
           <div class="alert alert-warn">Warning Alert</div>
         </div>
 
+        <pre>
+          <code>
+            <div class="alert alert-info">Info Alert</div>
+            <div class="alert alert-success">Success Alert</div>
+            <div class="alert alert-err">Error Alert</div>
+            <div class="alert alert-warn">Warning Alert</div>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Alert with Icon</h3>
+        <p class="content__p">
+          This include simple text message with icon.
+        </p>
         <div class="alert_container flex-column">
           <div class="alert alert-w-icon alert-info">
             <div class="alert_icon">
@@ -105,6 +114,36 @@
             <div class="alert_msg">Warning Alert</div>
           </div>
         </div>
+
+        <pre>
+          <code lang="html">
+            <div class="alert alert-w-icon alert-info">
+              <div class="alert_icon">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="alert_msg">Info Alert</div>
+            </div>
+            <div class="alert alert-w-icon alert-success">
+              <div class="alert_icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div class="alert_msg">Success Alert</div>
+            </div>
+            <div class="alert alert-w-icon alert-err">
+              <div class="alert_icon">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </div>
+              <div class="alert_msg">Error Alert</div>
+            </div>
+            <div class="alert alert-w-icon alert-warn">
+              <div class="alert_icon">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </div>
+              <div class="alert_msg">Warning Alert</div>
+            </div>
+          </code>
+        </pre>
+
       </div>
     </main>
    <footer class="footer flex-column-center">
@@ -121,5 +160,8 @@
       </li>
     </ul>
   </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
   </body>
 </html>

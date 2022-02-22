@@ -23,7 +23,7 @@
     <div class="nav">
       <ul class="nav_ul flex-justify-sp-bw">
         <li class="nav_li"><a href="/index.html">Home</a></li>
-        <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+        <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
         <li class="nav_li">
           <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
         </li>
@@ -51,7 +51,7 @@
               <li class="drawer_li"><a href="/Docs/Card/card.html" class="drawer_a">Card</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
-              <li class="drawer_li"><a href="/Docs/Image/image.html" class="drawer_a">Image</a></li>
+              <li class="drawer_li"><a href="/Docs/Image/image.html" class="drawer_a link-active">Image</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
               <li class="drawer_li"><a href="/Docs/Input/input.html" class="drawer_a">Input</a></li>
@@ -71,7 +71,8 @@
 
       <div class="content">
         <h2 class="content_h2">Image</h2>
-        <h3 class="content_h3">Responsive Img :</h3>
+        <h3 class="content_h3">Responsive Img:</h3>
+        <p class="content__p">Make an image responsive by adding <span class="class-name__highlight">img-responsive</span> class.</p>
         <div class="img-container flex-center">
           <img
             class="img-responsive"
@@ -79,7 +80,17 @@
             alt="Profile pic"
           />
         </div>
+        <pre>
+          <code lang="html">
+            <img
+            class="img-responsive"
+            src="/Assets/Img_1.jpg"
+            alt="Profile pic"
+          />
+          </code>
+        </pre>
         <h3 class="content_h3">Rounded Img :</h3>
+        <p class="content__p">Make an image rounded by adding <span class="class-name__highlight">img-rounded</span> class and for different sizes use <span class="class-name__highlight">img-rounded-{size}</span> class with size value being xsm, sm, md, lg.</p>
         <div class="img-container flex-center">
           <img
             class="img-rounded img-rounded-xsm"
@@ -102,6 +113,30 @@
             alt="Dog pic"
           />
         </div>
+        <pre>
+          <code lang="html">
+          <img
+            class="img-rounded img-rounded-xsm"
+            src="/Assets/Img_2.jpg"
+            alt="Dog pic"
+          />
+          <img
+            class="img-rounded img-rounded-sm"
+            src="/Assets/Img_2.jpg"
+            alt="Dog pic"
+          />
+          <img
+            class="img-rounded img-rounded-md"
+            src="/Assets/Img_2.jpg"
+            alt="Dog pic"
+          />
+          <img
+            class="img-rounded img-rounded-lg"
+            src="/Assets/Img_2.jpg"
+            alt="Dog pic"
+          />
+          </code>
+        </pre>
       </div>
     </main>
 
@@ -119,5 +154,8 @@
       </li>
     </ul>
   </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
   </body>
 </html>

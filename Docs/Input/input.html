@@ -17,7 +17,7 @@
     <div class="nav">
       <ul class="nav_ul flex-justify-sp-bw">
         <li class="nav_li"><a href="/index.html">Home</a></li>
-        <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+        <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
         <li class="nav_li">
           <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
         </li>
@@ -48,7 +48,7 @@
             <li class="drawer_li"><a href="/Docs/Image/image.html" class="drawer_a">Image</a></li>
           </ul>
           <ul class="drawer_ul ul-pad-0">
-            <li class="drawer_li"><a href="/Docs/Input/input.html" class="drawer_a">Input</a></li>
+            <li class="drawer_li"><a href="/Docs/Input/input.html" class="drawer_a link-active">Input</a></li>
           </ul>
           <ul class="drawer_ul ul-pad-0">
             <li class="drawer_li"><a href="/Docs/Modal/modal.html" class="drawer_a">Modal</a></li>
@@ -65,6 +65,7 @@
 
     <div class="content">
       <h2 class="content_h2">Input</h2>
+      <p class="content__p">Two types of input validation are available i.e. success and error. Use <span class="class-name__highlight">input-success</span> and <span class="class-name__highlight">input-err</span> for respective success and error validation. Similarly for success and error message use <span class="class-name__highlight">input__succ-msg</span> and <span class="class-name__highlight">input__err-msg</span> classes respectively.</p>
       <div class="form-container flex-center">
         <form class="form">
           <div class="input-container">
@@ -85,6 +86,28 @@
           </div>
         </form>
       </div>
+      <pre>
+        <code lang="html">
+          <form class="form">
+            <div class="input-container">
+              <label for="userName" class="input__label">User Name:</label>
+              <input type="text" id="userName" class="input input-success" required>
+              <small class="input__succ-msg">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>This is success msg</span>
+              </small>
+            </div>
+            <div class="input-container">
+              <label for="password" class="input__label">Password</label>
+              <input type="password" id="password" class="input input-err" required>
+              <small class="input__err-msg">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <span>This is error msg</span>
+              </small>
+            </div>
+          </form>
+        </code>
+      </pre>
     </div>
 
   </main>
@@ -103,6 +126,8 @@
       </li>
     </ul>
   </footer>
-
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
   </body>
   </html>

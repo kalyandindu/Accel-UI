@@ -1,7 +1,7 @@
 .img-container {
   gap: var(--sp-md);
   flex-wrap: wrap;
-  width: 85%;
+  width: 100%;
   box-shadow: 0 0 4px var(--gray-900);
 }
 .image-responsive {

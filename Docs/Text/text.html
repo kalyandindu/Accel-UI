@@ -17,7 +17,7 @@
     <div class="nav">
       <ul class="nav_ul flex-justify-sp-bw">
         <li class="nav_li"><a href="/index.html">Home</a></li>
-        <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+        <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
         <li class="nav_li">
           <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
         </li>
@@ -57,7 +57,7 @@
             <li class="drawer_li"><a href="/Docs/Navigation/navigation.html" class="drawer_a">Navigation</a></li>
           </ul>
           <ul class="drawer_ul ul-pad-0">
-            <li class="drawer_li"><a href="/Docs/Text/text.html" class="drawer_a">Text Utilities</a></li>
+            <li class="drawer_li"><a href="/Docs/Text/text.html" class="drawer_a link-active">Text Utilities</a></li>
           </ul>
         </div>
       </div>
@@ -65,6 +65,7 @@
 
     <div class="content">
       <h2 class="content_h2">Text Utilities</h2>
+      <p class="content__p">Helper classes for header and paragraphs. This overwrites the existing fontsize, line-height and font-weight of h1 to h4 headers and paragraph. This uses classes <span class="class-name__highlight">Heading-{number}</span> and <span class="class-name__highlight">p-{size}</span> where number ranging from 1 to 4 and size being either of sm, md or lg.</p>
       <div class="text-utility-container">
         <h1 class="header-1">Accel UI - Heading 1</h1>
         <h2 class="header-2">Accel UI - Heading 2</h2>
@@ -76,6 +77,19 @@
         <p class="text-c-gray">Accel UI - Paragraph in grey color</p>
         <p class="text-centered">Accel UI - Centered Text</p>
       </div> 
+      <pre>
+        <code lang="html">
+        <h1 class="header-1">Accel UI - Heading 1</h1>
+        <h2 class="header-2">Accel UI - Heading 2</h2>
+        <h3 class="header-3">Accel UI - Heading 3</h3>
+        <h4 class="header-4">Accel UI - Heading 4</h4>
+        <p class="p-sm">Accel UI - Paragraph small font</p>
+        <p class="p-md">Accel UI - Paragraph medium font</p>
+        <p class="p-lg">Accel UI - Paragraph large font</p>
+        <p class="text-c-gray">Accel UI - Paragraph in grey color</p>
+        <p class="text-centered">Accel UI - Centered Text</p>
+        </code>
+      </pre>
     </div>
 
   </main>
@@ -94,6 +108,8 @@
       </li>
     </ul>
   </footer>
-
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
   </body>
   </html>

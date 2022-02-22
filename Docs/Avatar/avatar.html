@@ -23,7 +23,7 @@
     <div class="nav">
       <ul class="nav_ul flex-justify-sp-bw">
         <li class="nav_li"><a href="/index.html">Home</a></li>
-        <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+        <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
         <li class="nav_li">
           <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
         </li>
@@ -39,7 +39,7 @@
               <li class="drawer_li"><a href="/Docs/Alert/alert.html" class="drawer_a">Alert</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
-              <li class="drawer_li"><a href="/Docs/Avatar/avatar.html" class="drawer_a">Avatar</a></li>
+              <li class="drawer_li"><a href="/Docs/Avatar/avatar.html" class="drawer_a link-active">Avatar</a></li>
             </ul>
             <ul class="drawer_ul ul-pad-0">
               <li class="drawer_li"><a href="/Docs/Badge/badge.html" class="drawer_a">Badge</a></li>
@@ -69,7 +69,10 @@
         </div>
       </aside>
       <div class="content">
+        <h3 class="content_h3">Avatar</h3>
+        <p class="content__p">Avatar component is used to display images, initials etc. that represent the user. It comes in various sizes from x-small to x-large.</p>
         <h3 class="content_h3">Rounded Avatar</h3>
+        <p class="content__p">Most commonly used avatar for profile picture. Use class <span class="class-name__highlight">avatar-round</span> to round the container and <span class="class-name__highlight">avatar_img</span> for image to fit into container</p>
         <div class="avatar-container flex-center">
           <div class="avatar-round avatar-xsm">
             <img src="/Assets/Img_1.jpg" alt="Profile pic" class="avatar_img" />
@@ -88,7 +91,28 @@
           </div>
         </div>
 
+        <pre>
+          <code lang="html">
+            <div class="avatar-round avatar-xsm">
+              <img src="place img source here" alt="Profile pic" class="avatar_img" />
+            </div>
+            <div class="avatar-round avatar-sm">
+              <img src="place img source here" alt="Profile pic" class="avatar_img" />
+            </div>
+            <div class="avatar-round avatar-md">
+              <img src="place img source here" alt="Profile pic" class="avatar_img" />
+            </div>
+            <div class="avatar-round avatar-lg">
+              <img src="place img source here" alt="Profile pic" class="avatar_img" />
+            </div>
+            <div class="avatar-round avatar-xlg">
+              <img src="place img source here" alt="Profile pic" class="avatar_img" />
+            </div>
+          </code>
+        </pre>
+
         <h3 class="content_h3">Squared Avatar:</h3>
+        <p class="content__p">This is a squared avatar with rounded corners. This typically can also be used as profile picture. Use class <span class="class-name__highlight">avatar-squared</span> for rounded square container and <span class="class-name__highlight">avatar_img</span> for image to fit into container.</p>
         <div class="avatar-container flex-center">
           <div class="avatar-squared avatar-xsm">
             <img src="/Assets/Img_2.jpg" alt="Profile pic" class="avatar_img" />
@@ -106,6 +130,27 @@
             <img src="/Assets/Img_2.jpg" alt="Profile pic" class="avatar_img" />
           </div>
         </div>
+
+        <pre>
+          <code class="html">
+            <div class="avatar-squared avatar-xsm">
+              <img src="place img src here" alt="Profile pic" class="avatar_img" />
+            </div>
+            <div class="avatar-squared avatar-sm">
+              <img src="place img src here" alt="Profile pic" class="avatar_img" />
+            </div>
+            <div class="avatar-squared avatar-md">
+              <img src="place img src here" alt="Profile pic" class="avatar_img" />
+            </div>
+            <div class="avatar-squared avatar-lg">
+              <img src="place img src here" alt="Profile pic" class="avatar_img" />
+            </div>
+            <div class="avatar-squared avatar-xlg">
+              <img src="place img src here" alt="Profile pic" class="avatar_img" />
+            </div>
+          </code>
+        </pre>
+
       </div>
     </main>
    <footer class="footer flex-column-center">
@@ -122,5 +167,8 @@
       </li>
     </ul>
   </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
   </body>
 </html>

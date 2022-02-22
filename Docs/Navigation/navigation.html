@@ -17,7 +17,7 @@
     <div class="nav">
       <ul class="nav_ul flex-justify-sp-bw">
         <li class="nav_li"><a href="/index.html">Home</a></li>
-        <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+        <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
         <li class="nav_li">
           <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
         </li>
@@ -54,7 +54,7 @@
             <li class="drawer_li"><a href="/Docs/Modal/modal.html" class="drawer_a">Modal</a></li>
           </ul>
           <ul class="drawer_ul ul-pad-0">
-            <li class="drawer_li"><a href="/Docs/Navigation/navigation.html" class="drawer_a">Navigation</a></li>
+            <li class="drawer_li"><a href="/Docs/Navigation/navigation.html" class="drawer_a link-active">Navigation</a></li>
           </ul>
           <ul class="drawer_ul ul-pad-0">
             <li class="drawer_li"><a href="/Docs/Text/text.html" class="drawer_a">Text Utilities</a></li>
@@ -65,6 +65,7 @@
 
     <div class="content">
       <h2 class="content_h2">Navigation Bar</h2>
+      <p class="content__p">Navigation bar is used to navigate across pages or within the page. Use <span class="class-name__highlight">nav-bar</span> class to create a navigation bar. For other sub elements refer the below code block.</p>
       <div class="nav-bar__container">
         <nav class="nav-bar flex-justify-sp-bw">
           <div class="nav-bar__title"><a class="nav-bar__a" href="#">Logo & Title</a></div>
@@ -78,6 +79,21 @@
           </div>
         </nav>
       </div> 
+      <pre>
+        <code lang="html">
+          <nav class="nav-bar flex-justify-sp-bw">
+            <div class="nav-bar__title"><a class="nav-bar__a" href="#">Logo & Title</a></div>
+            <div class="nav-bar__list">
+              <ul class="nav-bar__ul flex-justify-sp-bw">
+                <li class="nav-bar__li"><a class="nav-bar__a" href="#">Home</a></li>
+                <li class="nav-bar__li"><a class="nav-bar__a" href="#">Services</a></li>
+                <li class="nav-bar__li"><a class="nav-bar__a" href="#">Portfolio</a></li>
+                <li class="nav-bar__li"><a class="nav-bar__a" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </code>
+      </pre>
     </div>
 
   </main>
@@ -96,6 +112,9 @@
       </li>
     </ul>
   </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
 
   </body>
   </html>

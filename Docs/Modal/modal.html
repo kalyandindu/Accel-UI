@@ -17,7 +17,7 @@
     <div class="nav">
       <ul class="nav_ul flex-justify-sp-bw">
         <li class="nav_li"><a href="/index.html">Home</a></li>
-        <li class="nav_li"><a href="/Docs/Alert/alert.html">Documentation</a></li>
+        <li class="nav_li"><a href="/Docs/Alert/alert.html" class="link-active">Documentation</a></li>
         <li class="nav_li">
           <a href="https://github.com/kalyandindu/Accel-UI"><i class="fab fa-github"></i></a>
         </li>
@@ -51,7 +51,7 @@
             <li class="drawer_li"><a href="/Docs/Input/input.html" class="drawer_a">Input</a></li>
           </ul>
           <ul class="drawer_ul ul-pad-0">
-            <li class="drawer_li"><a href="/Docs/Modal/modal.html" class="drawer_a">Modal</a></li>
+            <li class="drawer_li"><a href="/Docs/Modal/modal.html" class="drawer_a link-active">Modal</a></li>
           </ul>
           <ul class="drawer_ul ul-pad-0">
             <li class="drawer_li"><a href="/Docs/Navigation/navigation.html" class="drawer_a">Navigation</a></li>
@@ -65,7 +65,9 @@
 
     <div class="content">
       <h2 class="content_h2">Modal</h2>
+      <p class="content__p">Modal is a pop up event asking to confirm/select any action before proceeding</p>
       <h3 class="content_h2">Normal Modal:</h3>
+      <p class="content__p"> Simple modal with text and actionable items. Use <span class="class-name__highlight">modal</span> class for container. Similarly <span class="class-name__highlight">modal__title</span>, <span class="class-name__highlight">modal__body</span> for description and <span class="class-name__highlight">modal__footer</span> for action items.</p>
       <div class="modal__container flex-center">
         <div class="modal">
           <div class="modal__header">
@@ -82,7 +84,26 @@
         </div>    
       </div> 
 
+      <pre>
+        <code lang="html">
+          <div class="modal">
+            <div class="modal__header">
+              <h3 class="modal__title">Modal Title</h3>
+            </div>
+            <div class="modal__body"> 
+              modal body content goes here
+              <div class="modal__footer">
+              <button class="btn btn-outline">Cancel</button>
+              <button class="btn btn-primary"> Save</button>
+              </div>
+              <div class="modal__icon-container"> <i class="fa-solid fa-circle-xmark modal__icon"></i></div>
+            </div>
+          </div>
+        </code>
+      </pre>
+
       <h3 class="content_h2">Scrolable Modal:</h3>
+      <p class="content__p">For overflowing content add <span class="class-name__highlight">modal-scroll</span> class to make it scrollable</p>
       <div class="modal__container flex-center">
         <div class="modal modal-scroll">
           <div class="modal__header">
@@ -100,6 +121,23 @@
         </div>
         
       </div> 
+      <pre>
+        <code lang="html">
+          <div class="modal modal-scroll">
+            <div class="modal__header">
+              <h3 class="modal__title">Modal Title</h3>
+            </div>
+            <div class="modal__body"> 
+             Modal body content goes here.
+            </div>
+            <div class="modal__footer">
+             <button class="btn btn-outline">Cancel</button>
+             <button class="btn btn-primary"> Save</button>
+            </div>
+            <div class="modal__icon-container"> <i class="fa-solid fa-circle-xmark modal__icon"></i></div>
+          </div>
+        </code>
+      </pre>
     </div>
 
   </main>
@@ -118,6 +156,9 @@
       </li>
     </ul>
   </footer>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="/Js/tag_conversion.js"></script>
 
   </body>
   </html>

@@ -1,5 +1,5 @@
 .alert_container {
-  width: 80%;
+  width: 100%;
   gap: var(--sp-sm);
   padding: var(--sp-md);
   box-shadow: 0 0 2px var(--gray-700);
